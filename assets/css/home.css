@@ -1,0 +1,414 @@
+body{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #05080c;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.lf-header-container{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc52;
+}
+.lf-header-container .lf-header-wrapper{
+  width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.lf-header-container .lf-header-wrapper h1{
+  font-weight: 800;
+  font-size: 24px;
+}
+.lf-header-container .lf-header-wrapper nav ul{
+  display: flex;
+  gap: 20px;
+}
+.lf-header-container .lf-header-wrapper nav ul li{
+  font-size: 14px;
+  font-weight: 500;
+}
+.lf-header-container .lf-header-wrapper .btnLinkheader{
+  background-color: #248466;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.lf-header-container .lf-header-wrapper .btnLinkheader:hover{
+  background-color: #fff;
+  color: #393939;
+}
+.lf-main-container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.lf-main-container .imgBgHeader {
+  width: 100%;
+  filter: brightness(0.2);
+  position: absolute;
+  height: 620px;
+  z-index: -1;
+}
+.lf-main-container .mainContainer {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 130px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.lf-main-container .mainContainer .headerText {
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lf-main-container .mainContainer .headerText h2 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+}
+.lf-main-container .mainContainer .headerText h3 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.lf-main-container .mainContainer .headerText .fastLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.lf-main-container .mainContainer .headerText .fastLinks button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.lf-main-container .mainContainer .headerText .fastLinks button > img{
+  width: 23px;
+}
+.lf-main-container .mainContainer .headerText .fastLinks .linkBtnWhite{
+  padding: 10px;
+  background-color: #fff;
+  color: #05080c;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.lf-main-container .mainContainer .headerText .fastLinks .linkBtnWhite:hover{
+  background-color: #248466;
+  color: white;
+}
+.lf-main-container .mainContainer .infoBoxes {
+  display: flex;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.lf-main-container .mainContainer .infoBoxes .infoBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b242f;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #dcdcdc30;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.lf-main-container .mainContainer .infoBoxes .splide__arrows{
+  display: none;
+}
+
+.lf-main-container .mainContainer .infoBoxes .infoBox span{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.lf-main-container .mainContainer .infoBoxes .infoBox span img{
+  width: 20px;
+}
+.lf-main-container .mainContainer .infoBoxes .infoBox h2{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.lf-main-container .mainContainer .infoBoxes .infoBox h3{
+  font-size: 16px;
+  line-height: 24px;
+  color: #D1D5DB;
+  font-weight: 200;
+}
+.lf-main-container .mainContainer .infoBoxes .infoBox a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.lf-main-container .mainContainer .sectionInfo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  gap: 30px;
+  place-items: center;
+}
+.lf-main-container .mainContainer .sectionInfo > img{
+  width: 100%;
+  border-radius: 15px;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo h2{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo h3 {
+  font-weight: 200;
+  font-size: 16px;
+  color: #D1D5DB;
+  line-height: 22px;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo .textInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo .textInfo span{
+  margin-top: 5px;
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #374151;
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo .textInfo span img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(3);
+}
+.lf-main-container .mainContainer .sectionInfo .textSectionInfo .textInfo h2{
+  font-size: 16px;
+  font-weight: 600;
+}
+.lf-main-container .fullContainerImg {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.lf-main-container .fullContainerImg .imgSectionFull{
+  width: 100%;
+  filter: brightness(0.3);
+  position: absolute;
+  height:100%;
+  object-fit: cover;
+}
+.lf-main-container .fullContainerImg .feedbackReviews{
+  max-width: 1360px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b242f;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #dcdcdc30;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox h2{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox .infoReview {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox .infoReview img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 16/9;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox .infoReview h2{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .infoBox .infoReview h3{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 200;
+  text-align: center;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .splide__track{
+  height: 100%;
+}
+.lf-main-container .fullContainerImg .feedbackReviews .splide__list{
+  align-items: center;
+}
+.lf-main-container .fullContainerImg .splide__arrows{
+  display: none;
+}
+.lf-main-container .frequentlyAsked{
+  padding: 50px 0;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 10px;
+}
+.lf-main-container .frequentlyAsked > h2{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+}
+.lf-main-container .frequentlyAsked > h3{
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.lf-main-container .frequentlyAsked .questionsAndAnswers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+}
+.lf-main-container .frequentlyAsked .questionsAndAnswers .qa{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.lf-main-container .frequentlyAsked .questionsAndAnswers details {
+  width: 100%;
+  margin: 0 auto ;
+  background: #2c353e4f;
+  margin-bottom: .5rem;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers summary {
+  padding: 1rem;
+  display: flex;
+  background: #1b242f;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 17px;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers details summary::-webkit-details-marker {
+  display:none;
+}
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.lf-main-container .frequentlyAsked .questionsAndAnswers details h2 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #D1D5DB;
+  padding: 20px;
+  text-align: left;
+}
+@media (max-width:1360px){
+  .lf-header-container .lf-header-wrapper {
+    padding: 20px;
+}
+.lf-main-container .mainContainer {
+  padding: 130px 20px 50px 20px;
+}
+.lf-main-container .fullContainerImg .feedbackReviews {
+  padding: 0 20px;
+}
+.lf-main-container .frequentlyAsked{
+  padding: 50px 20px;
+}
+}
+@media (max-width:1024px){
+  .lf-main-container .mainContainer .sectionInfo {
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+.lf-main-container .mainContainer .sectionInfo:last-of-type > img{
+  grid-row: 1;
+}
+}
+@media(max-width:700px){
+  .lf-main-container .imgBgHeader {
+    height: 620px;
+  }
+  .lf-main-container .mainContainer .infoBoxes .splide__pagination {
+    bottom: -20px;
+  }
+  .lf-main-container .imgBgHeader {
+    height: 730px;
+    object-fit: cover;
+}
+}
